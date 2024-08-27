@@ -1,7 +1,7 @@
 /* General Page Style */
 body {
   font-family: 'Arial', sans-serif;
-  background-image: url('C:\Users\sandy\Desktop\form\feedback\public\back.jpg');  /* Ensure the path to the image is correct */
+  background-image: url('./back.jpg');/* Ensure the path to the image is correct */
   background-size: cover;
   background-position: center;
   margin: 0;
