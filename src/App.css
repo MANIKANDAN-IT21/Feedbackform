@@ -1,0 +1,140 @@
+/* General Page Style */
+body {
+  font-family: 'Arial', sans-serif;
+  background-image: url('C:\Users\sandy\Desktop\form\feedback\public\back.jpg');  /* Ensure the path to the image is correct */
+  background-size: cover;
+  background-position: center;
+  margin: 0;
+  padding: 0;
+}
+
+/* Container Style */
+.App {
+  max-width: 600px;
+  margin: 100px auto;
+  background: rgba(214, 231, 54, 0.8); /* Semi-transparent background */
+  padding: 50px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+
+/* Header Style */
+h1 {
+  color: #333;
+  margin-bottom: 20px;
+  font-size: 2.5rem;
+}
+
+/* Form Group Styles */
+.form-group {
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+label {
+  display: block;
+  margin-bottom: 10px;
+  font-weight: bold;
+  font-size: 1.1rem;
+  color: #555;
+}
+
+/* Flexbox Layout for Rows */
+.row {
+  display: flex;
+  justify-content: space-between;
+  gap: 50px; /* Gap between elements in the row */
+  margin-bottom: 20px;
+}
+
+.half-width {
+  flex: 5; /* Allows the fields to expand equally */
+}
+
+/* Textbox & Textarea Styles */
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="number"],
+textarea {
+  width: 100%;
+  padding: 12px;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+  background-color: #f9f9f9;
+  box-shadow: inset 0px 1px 3px rgba(0, 0, 0, 0.1);
+  transition: border-color 0.3s, background-color 0.3s;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="tel"]:focus,
+input[type="number"]:focus,
+textarea:focus {
+  border-color: #6a82fb;
+  background-color: #fff;
+  outline: none;
+}
+
+/* Button Styles */
+button {
+  background-color: #6a82fb; /* Default background color */
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+button:hover {
+  background-color: #a683e3;
+  transform: scale(1.05); /* Slight zoom on hover */
+}
+
+button:active {
+  background-color: #9c71f0;
+  transform: scale(1); /* Reset zoom when clicked */
+}
+
+/* Clear Button Specific Style */
+button[type="button"] {
+  background-color: #f85f73; /* Different color for Clear button */
+  margin-left: 10px;
+}
+
+button[type="button"]:hover {
+  background-color: #fa7d8f;
+}
+
+button[type="button"]:active {
+  background-color: #f9526c;
+}
+
+/* Error Message Style */
+.error {
+  color: #e74c3c;
+  font-weight: bold;
+  margin-top: 20px;
+  font-size: 1rem;
+  text-align: center;
+}
+
+/* Success Page Styles */
+.success-page {
+  text-align: center;
+  margin-top: 100px;
+}
+
+.success-page h1 {
+  color: #ff0000;
+  font-size: 2.5rem;
+}
+
+.success-page p {
+  font-size: 1.2rem;
+  color: #000000;
+}
